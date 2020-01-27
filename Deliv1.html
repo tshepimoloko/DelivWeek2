@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles.css">
+
+    <title> HICKIES Originals</title>
+
+</head>
+
+<body>
+<!--SECTION1: Heading& Center Page-->
+<div class="content">
+    <h1><strong>HICKIES Originals</strong></h1>
+
+<!--SECTION2: -->
+
+<!--SECTION3: -->
+
+<!--SECTION4: modal pop up-->
+        <!-- Trigger modal -->
+        <!-- <button onclick="myAddToCart()">Add to Cart</button> -->
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#addToCartModal">
+            Add to Cart
+            </button>
+    
+            <!-- Modal -->
+            <div class="modal fade" id="addToCartModal" tabindex="-1" role="dialog" aria-labelledby="addToCartModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="addToCartModalLabel">Please add the quantity of the item you've selected</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="form-group">
+                 
+                        <div class="input-group">
+                            <div class="input-group-btn">
+                                <button id="down" class="btn btn-default" onclick=" down('0')"><span class="glyphicon glyphicon-minus"></span></button>
+                            </div>
+                            <input type="label" id="myCart" class="form-control input-number" value="myColor"  />
+                            <div class="input-group-btn">
+                                <button id="up" class="btn btn-default" onclick="up('10')"><span class="glyphicon glyphicon-plus"></span></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Submit</button>
+                </div>
+                </div>
+            </div>
+            </div>
+</div>
+</body>
+</html>
